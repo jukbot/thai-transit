@@ -1,58 +1,35 @@
 <!doctype html>
-<html lang="en">
+<html>
   <head>
     <meta charset="utf-8">
     <meta name="generator" content="Polymer 2">
     <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
-    <meta name="description" content="Your transit helper">
+    <meta name="description" content="Your personal transit helper">
     <title>Thai Transit</title>
     <base href="/">
     <meta name="author" content="Juk">
-    <meta name="robots" content="index, nofollow">
-    <meta name="theme-color" content="#3f51b5">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#ed1c24">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="Transit">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="Transit">
-    <meta name="msapplication-TileImage" content="images/manifest/icon-144x144.png">
-    <meta name="msapplication-TileColor" content="#3f51b5">
-    <meta name="msapplication-tap-highlight" content="no">
-    <link rel="apple-touch-icon" href="images/manifest/icon-48x48.png">
     <link rel="icon" href="images/favicon.png">
     <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="images/manifest/icon-48x48.png">
     <link rel="apple-touch-icon" sizes="72x72" href="images/manifest/icon-72x72.png">
     <link rel="apple-touch-icon" sizes="96x96" href="images/manifest/icon-96x96.png">
     <link rel="apple-touch-icon" sizes="144x144" href="images/manifest/icon-144x144.png">
     <link rel="apple-touch-icon" sizes="192x192" href="images/manifest/icon-192x192.png">
-        <link rel="apple-touch-icon" sizes="192x192" href="images/manifest/icon-192x192.png">
-    <script>
-      const baseUrl = document.querySelector('base').href;
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', function() {
-          navigator.serviceWorker.register(baseUrl + 'service-worker.js');
-        });
-      }
-    </script>
+    <link rel="apple-touch-icon" sizes="192x192" href="images/manifest/icon-192x192.png">
+    <script>const baseUrl = document.querySelector('base').href;"serviceWorker"in navigator&&window.addEventListener("load",function(){navigator.serviceWorker.register(baseUrl+"service-worker.js")});</script>
+    <style>body{font-family:-apple-system, BlinkMacSystemFont, "Roboto", "Noto", sans-serif;min-height:100vh;margin:0 auto;padding:0;line-height:1.5;background-color:#ed1c24}.cs-loader{position:absolute;top:0;left:0;height:100%;width:100%}.cs-loader-inner{transform:translateY(-50%);top:50%;position:absolute;width:calc(100% - 200px);color:#FFF;padding:0 100px;text-align:center}.cs-loader-inner label{font-size:20px;opacity:0;display:inline-block}@keyframes "lol"{0%{opacity:0;transform:translateX(-300px);}33%{opacity:1;transform:translateX(0px);}66%{opacity:1;transform:translateX(0px);}100%{opacity:0;transform:translateX(300px);}}@-webkit-keyframes "lol"{0%{opacity:0;-webkit-transform:translateX(-300px);}33%{opacity:1;-webkit-transform:translateX(0px);}66%{opacity:1;-webkit-transform:translateX(0px);}100%{opacity:0;-webkit-transform:translateX(300px);}}.cs-loader-inner label:nth-child(6){-webkit-animation:lol 3s infinite ease-in-out;animation:lol 3s infinite ease-in-out}.cs-loader-inner label:nth-child(5){-webkit-animation:lol 3s 100ms infinite ease-in-out;animation:lol 3s 100ms infinite ease-in-out}.cs-loader-inner label:nth-child(4){-webkit-animation:lol 3s 200ms infinite ease-in-out;animation:lol 3s 200ms infinite ease-in-out}.cs-loader-inner label:nth-child(3){-webkit-animation:lol 3s 300ms infinite ease-in-out;animation:lol 3s 300ms infinite ease-in-out}.cs-loader-inner label:nth-child(2){-webkit-animation:lol 3s 400ms infinite ease-in-out;animation:lol 3s 400ms infinite ease-in-out}.cs-loader-inner label:nth-child(1){-webkit-animation:lol 3s 500ms infinite ease-in-out;animation:lol 3s 500ms infinite ease-in-out}</style>
     <script src="bower_components/webcomponentsjs/webcomponents-loader.js"></script>
     <link rel="import" href="src/my-app.html">
-    <style>
-      body {
-        font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Noto", sans-serif;
-        min-height: 100vh;
-        max-width: 1280px;
-        margin: 0 auto;
-        padding: 0;
-        line-height: 1.5;
-        color: #333333;
-      }
-       
-    </style>
   </head>
   <body>
-    <my-app></my-app>
-    <noscript>
-      Please enable JavaScript to view this website.
-    </noscript>
+  <my-app><div class="cs-loader"><div class="cs-loader-inner"><label>	●</label><label> ●</label><label>	●</label><label> ●</label><label> ●</label><label> ●</label></div></div></my-app>
+  <noscript>Please enable JavaScript to view this website.</noscript>
   </body>
 </html>

@@ -3,7 +3,7 @@
   "short_name": "Transit",
   "start_url": "/",
   "display": "standalone",
-  "description": "Your transit helper",
+  "description": "Your personal transit helper",
   "orientation" : "portrait",
   "theme_color": "#ed1c24",
   "background_color": "#fffcd6",
